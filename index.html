@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversy-Bookmark list app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome-all.css">
+
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container mlr-center">
+        <!--header-->
+        <div class="header col-12 mlr-center">
+            <h1 class="header-txt">
+                <i class="fas fa-book"></i>
+                my<span class="book-txt">Book</span>List
+            </h1>
+        </div>
+
+        <!--forms-->
+
+        <div class="form-container col-12">
+            <form method="post" class="forms" id="forms">
+
+                <div class="title-div form-div mlr-center">
+                    <h3 class="input-header input-name">title</h3>
+                   
+                    <div class="input-div">
+                        <input type="text" name="title" id="titleInput" class="title">
+
+                    </div>
+                </div>
+
+                <div class="autor-div form-div mlr-center">
+                    <h3 class="input-header input-name2">author</h3>
+                    
+                    <div class="input-div">
+                        <input type="text" name="author" id="authorInput" class="author">
+                    </div>
+
+                </div>
+
+                <div class="isbn-div form-div mlr-center">
+                    <h3 class="input-header input-name3">isbn#</h3>
+                    
+                    <div class="input-div">
+                        <input type="text" name="isbn#" id="isbnInput" class="isbn">
+                    </div>
+
+                </div>
+
+                <div class="btn-container">
+                    <button type="submit" class="btn">add book</button>
+                </div>
+            </form>
+        </div>
+
+        <!--table-->
+        <div class="table-container col-12 mlr-center">
+            <table class="tables" id="tables" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>title</th>
+                        <th>author</th>
+                        <th>isbn#</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody class="tbody" id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
